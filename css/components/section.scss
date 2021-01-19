@@ -4,9 +4,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-box-pack: center;
+     
+    &--font-color--green {
+        color: $darkGreen;
+
+        .section__title {
+            color: inherit;
+        }
+    }
 }
 .section__title {
     font-size: 48px;

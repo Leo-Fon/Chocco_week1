@@ -1,6 +1,22 @@
 .reviews__display {
-    background: #f8faf9;
+    background: #f8faf9 url("../../img/Sloy.png") right top no-repeat;
     padding: 50px 45px 34px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 90px;
+        height: 90px;
+        background:#fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -65px;
+    }
 }
 .reviews__display-inner {
     display: flex;
