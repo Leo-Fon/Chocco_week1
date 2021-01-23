@@ -3,6 +3,16 @@
 html {
   font-size: 18px;
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 html,
 body {
@@ -90,6 +100,16 @@ div {
   color: #fff;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position: right bottom 88%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero:before, .hero:after {
+    display: none;
+  }
+}
 .hero:before {
   position: absolute;
   bottom: -3rem;
@@ -106,6 +126,30 @@ div {
 .hero__title-section {
   width: 46%;
 }
+@media screen and (max-width: 768px) {
+  .hero__title-section {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__title-section:before {
+    content: "";
+    background: url("../../img/decor/Bat.png") center center/contain no-repeat;
+    width: 17.5555555556rem;
+    height: 18.3333333333rem;
+    margin-bottom: 0.8888888889rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__icons-section {
+    display: none;
+  }
+}
 
 .hero__container {
   display: flex;
@@ -115,24 +159,39 @@ div {
   padding: 1.3333333333rem 0 2.5rem;
   background: url("../../img/decor/Bat.png") right center/50% auto no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+  }
+}
 
 .hero__main-title {
   font-size: 2.6666666667rem;
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 0.8333333333rem;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .hero__title-desc {
   font-size: 1.1666666667rem;
-  margin-bottom: 1.5555555556rem;
+  margin-bottom: 1.6666666667rem;
   padding-right: 10%;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-desc {
+    padding: 0 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title-desc {
+    padding: 0 16%;
+  }
 }
 
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -163,6 +222,12 @@ div {
 
 .menu__link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none;
+  }
 }
 
 .features {
@@ -227,21 +292,66 @@ div {
   color: #0b4d3c;
 }
 
+.menu__link {
+  text-decoration: none;
+  white-space: normal;
+}
+
+.menu {
+  margin: 0 30px;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  -webkit-box-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu__item {
+  margin-right: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.phone-number__text {
+  white-space: nowrap;
+}
+
+.phone-number__icon {
+  flex-shrink: 0;
+}
+
 .headline {
   text-align: center;
-  margin-bottom: 3.2777777778rem;
+  margin-bottom: 2.8333333333rem;
 }
 
 .headline__title {
-  margin-bottom: 1.3888888889rem;
+  margin-bottom: 0.3888888889rem;
 }
 
 .headline__subtitle {
   padding: 0 26%;
 }
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    padding: 0 5%;
+  }
+}
 
 .benefits {
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    flex-direction: column;
+    text-align: left;
+  }
 }
 
 .benefits__item {
@@ -249,12 +359,23 @@ div {
   padding: 0 3%;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    padding: 0;
+    margin-bottom: 1.0555555556rem;
+  }
+}
 .benefits__item:before {
   content: url("../../img/icons/Shape.png");
   position: absolute;
   top: 1.6666666667rem;
   right: 0;
   transform: translateX(50%);
+}
+@media screen and (max-width: 480px) {
+  .benefits__item:before {
+    display: none;
+  }
 }
 .benefits__item:first-child {
   padding-left: 0;
@@ -267,6 +388,11 @@ div {
 }
 .benefits__item .benefit {
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item .benefit {
+    display: flex;
+  }
 }
 .benefits__item .benefit__image-wrapper {
   display: inline-block;
@@ -285,6 +411,21 @@ div {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.benefits__item .benefit__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5555555556rem;
+  color: #000;
+}
+.benefits__item .benefit__image {
+  margin-bottom: 1.0555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item .benefit__image {
+    margin-bottom: 0;
+    margin-right: 1.1111111111rem;
+  }
+}
 
 .section {
   height: 100vh;
@@ -295,6 +436,7 @@ div {
 }
 .section--font-color--green {
   color: #0b4d3c;
+  background-image: url("/img/decor/f4b3e323e1385106649e7de4219cd9d4.png");
 }
 .section--font-color--green .section__title {
   color: inherit;
@@ -317,15 +459,25 @@ div {
   position: relative;
   background: url("../../img/list.png") left top 57% no-repeat;
 }
+@media screen and (max-width: 480px) {
+  .benefits-section {
+    background: none;
+  }
+}
 .benefits-section:before {
   content: url("../../img/Malina.png");
   position: absolute;
   bottom: -4.4444444444rem;
   left: 0;
 }
+@media screen and (max-width: 480px) {
+  .benefits-section:before {
+    display: none;
+  }
+}
 
 .reviews__display {
-  background: #f8faf9 url("../../img/Sloy.png") right top no-repeat;
+  background: #f8faf9 url("/img/Sloy.png") right top no-repeat;
   padding: 2.7777777778rem 2.5rem 1.8888888889rem;
   margin-bottom: 1.1111111111rem;
   overflow: hidden;
@@ -347,10 +499,23 @@ div {
 .reviews__display-inner {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .reviews__display-inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
 
 .reviews__avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    width: 7.2222222222rem;
+    height: 7.3333333333rem;
+  }
 }
 
 .reviews__avatar-img {
@@ -379,6 +544,11 @@ div {
   font-size: 1rem;
   font-weight: bold;
   color: black;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
 }
 
 .interactive-avatar {
@@ -412,6 +582,17 @@ div {
 .form {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .form {
+    padding: 0 19%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
+}
 
 .form__col {
   flex: 1;
@@ -419,6 +600,11 @@ div {
 }
 .form__col:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .form__col {
+    margin-right: 0;
+  }
 }
 
 .form__row {
@@ -452,12 +638,36 @@ div {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 480px) {
+  .form__controls {
+    justify-content: center;
+  }
+}
+
+.form__btn {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .form__title {
+    margin-bottom: 3px;
+  }
+}
 
 .radio {
   display: flex;
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+  align-items: center;
+  margin-right: 1.2222222222rem;
+  padding: 0.5555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .radio {
+    margin-bottom: 0.5555555556rem;
+  }
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -530,6 +740,12 @@ div {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-flex;
+  }
 }
 
 .hamburger__plank {
@@ -537,4 +753,42 @@ div {
   background: #fff;
   height: 4px;
   border-radius: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1.2777777778rem 0;
+  background: #fff;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.1111111111rem;
+  color: #010101;
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts__phone {
+  color: #0b4d3c;
 }

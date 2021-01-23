@@ -28,3 +28,8 @@
 .menu__link {
     text-decoration: none;
 }
+.phone-number.header__phone-number {
+    @include tablets {
+        display: none;
+    }
+}

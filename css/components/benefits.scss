@@ -1,5 +1,10 @@
 .benefits {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+        text-align: left;
+    }
 }
 .benefits__item {
     -webkit-box-flex: 1;
@@ -7,13 +12,23 @@
     padding: 0 3%;
     position: relative;
 
+    @include phones {
+        padding: 0;
+        margin-bottom: rem(19px);
+    }
+
     &:before {
         content: url("../../img/icons/Shape.png");
         position: absolute;
         top: rem(30px);
         right: 0;
         transform: translateX(50%);
+
+        @include phones {
+            display: none;
+        }
     }
+
     &:first-child {
         padding-left: 0;
     }
@@ -26,6 +41,10 @@
     }
     .benefit {
         text-align: center;
+
+        @include phones {
+            display: flex;
+        }
     }
     .benefit__image-wrapper {
         display: inline-block;
@@ -43,5 +62,20 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    .benefit__title {
+        font-size: rem(27px);
+        font-weight: bold;
+        margin-bottom: rem(10px);
+        color:#000;
+    }
+    .benefit__image {
+        margin-bottom: rem(19px);
+
+        @include phones {
+            margin-bottom: 0;
+            margin-right: rem(20px);
+
+        }
     }
 }

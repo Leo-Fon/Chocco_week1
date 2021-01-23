@@ -3,6 +3,9 @@
     white-space: normal;
 }
 .menu {
+    @include tablets {
+        display: none;
+    }
     margin: 0 30px;
 }
 .menu__list {

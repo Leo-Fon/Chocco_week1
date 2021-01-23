@@ -5,11 +5,13 @@
     flex-direction: column;
     justify-content: space-between;
     display: none;
+
+    @include tablets {
+        display: inline-flex;
+    }
 }
 
-@include tablets {
-    display: inline-flex;
-}
+
 .hamburger__plank {
     display: block;
     background: #fff;
