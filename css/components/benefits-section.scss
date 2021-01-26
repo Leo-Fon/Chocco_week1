@@ -1,13 +1,13 @@
 .benefits-section {
     position: relative;
-    background: url("../../img/list.png")left top 57% no-repeat;
+    background: url("../img/list.png")left top 57% no-repeat;
     
     @include phones {
         background: none;
     }
 
     &:before {
-        content: url("../../img/Malina.png");
+        content: url("../img/Malina.png");
         position: absolute;
         bottom: rem(-80px);
         left: 0;

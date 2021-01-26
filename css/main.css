@@ -93,7 +93,7 @@ div {
 }
 
 .hero {
-  background: url("../../img/decor/uz.png") right bottom no-repeat;
+  background: url("../img/decor/uz.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 36.1111111111rem;
@@ -114,10 +114,10 @@ div {
   position: absolute;
   bottom: -3rem;
   left: 2%;
-  content: url("../../img/list3.png");
+  content: url("../img/list3.png");
 }
 .hero:after {
-  content: url("../../img/comp.png");
+  content: url("../img/comp.png");
   position: absolute;
   bottom: -2.2222222222rem;
   right: 0;
@@ -138,7 +138,7 @@ div {
   }
   .hero__title-section:before {
     content: "";
-    background: url("../../img/decor/Bat.png") center center/contain no-repeat;
+    background: url("../img/decor/Bat.png") center center/contain no-repeat;
     width: 17.5555555556rem;
     height: 18.3333333333rem;
     margin-bottom: 0.8888888889rem;
@@ -157,7 +157,7 @@ div {
   justify-content: space-between;
   height: 100%;
   padding: 1.3333333333rem 0 2.5rem;
-  background: url("../../img/decor/Bat.png") right center/50% auto no-repeat;
+  background: url("../img/decor/Bat.png") right center/50% auto no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -366,7 +366,7 @@ div {
   }
 }
 .benefits__item:before {
-  content: url("../../img/icons/Shape.png");
+  content: url("../img/icons/Shape.png");
   position: absolute;
   top: 1.6666666667rem;
   right: 0;
@@ -436,7 +436,7 @@ div {
 }
 .section--font-color--green {
   color: #0b4d3c;
-  background-image: url("/img/decor/f4b3e323e1385106649e7de4219cd9d4.png");
+  background-image: url("../img/decor/f4b3e323e1385106649e7de4219cd9d4.png");
 }
 .section--font-color--green .section__title {
   color: inherit;
@@ -457,7 +457,7 @@ div {
 
 .benefits-section {
   position: relative;
-  background: url("../../img/list.png") left top 57% no-repeat;
+  background: url("../img/list.png") left top 57% no-repeat;
 }
 @media screen and (max-width: 480px) {
   .benefits-section {
@@ -465,7 +465,7 @@ div {
   }
 }
 .benefits-section:before {
-  content: url("../../img/Malina.png");
+  content: url("../img/Malina.png");
   position: absolute;
   bottom: -4.4444444444rem;
   left: 0;
@@ -477,7 +477,7 @@ div {
 }
 
 .reviews__display {
-  background: #f8faf9 url("/img/Sloy.png") right top no-repeat;
+  background: #f8faf9 url("../img/Sloy.png") right top no-repeat;
   padding: 2.7777777778rem 2.5rem 1.8888888889rem;
   margin-bottom: 1.1111111111rem;
   overflow: hidden;
